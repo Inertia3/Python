@@ -26,3 +26,6 @@ def main():
 
 if __name__ == "_main_":
     main()
+
+    #Switching up to feature3 to check the git rebase 
+    #Making changes here and merging it to the main branch
