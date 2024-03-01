@@ -1,9 +1,9 @@
 def function(x):
-    ans = x*3 - x*2 - 1
+    ans = x**3 - 5*x + 1
     return ans
 
 def dif_function(x):
-    ans1 = 3*x**2 - 2*x
+    ans1 = 3*x**2 - 5
     return ans1
 
 def newtonRaphson(x0, iter):
@@ -26,33 +26,6 @@ def user_input():
 def main():
     user_input()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
-def function(x):
-    return x*3 - x*2 - 2
 
-def secant_method(x0, x1, max_iter=100):
-    for i in range(max_iter):
-        f_x0 = function(x0)
-        f_x1 = function(x1)
-        if f_x1 == 0:
-            print("Root found:", x1)
-            return x1
-        if f_x0 == f_x1:
-            print("Secant method fails.")
-            return None
-        x_next = x1 - f_x1 * (x1 - x0) / (f_x1 - f_x0)
-        x0, x1 = x1, x_next
-    print("Maximum iterations reached. No root found.")
-    return None
-
-def user_input():
-    x0 = float(input("Enter the first initial guess: "))
-    x1 = float(input("Enter the second initial guess: "))
-    secant_method(x0, x1)
-
-def main():
-    user_input()
-
-if _name_ == "_main_":
-    main()
