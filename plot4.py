@@ -12,3 +12,4 @@ ynew = f(xnew)
 plt.plot(x,y,'*',xnew,ynew,'-',color = "green")
 
 plt.show();
+
