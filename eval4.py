@@ -1,3 +1,14 @@
+# A project manager needs to schedule three task: task 1, taskk 2, task 3.
+# Each task requires sa certain amount of time to complete and consumes specific 
+# amount of resources. THe manager wants to minimize the total time required to
+# complete all the task while ensuring that resouce usage does not exceed 
+# the availability capacity. Minimize the total time required to complete all tasks.
+
+# Task details:
+# Task 1: Requires 2 unit of resource and takes 3 days to complete 
+# Task 2: Requires 3 unit of resource and takes 5 days to complete 
+# Task 3: Requires 1 unit of resource and takes 4 days to complete
+
 from scipy.optimize import minimize
 
 # Define the objective function
@@ -27,3 +38,5 @@ allocation = res.x
 # Print the results
 print("Optimal total time required:", min_time)
 print("Optimal allocation of days to each task:", allocation)
+
+
