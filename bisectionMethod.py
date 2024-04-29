@@ -1,7 +1,7 @@
 import numpy as np
 
 def function(x):
-    ans = x*3 - x*2 - 1
+    ans = x**3 - x*2 - 1
     return ans
 
 def bisectionMethod(a, b, n):
